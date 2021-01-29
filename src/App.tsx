@@ -2,16 +2,13 @@ import React from "react";
 import "./App.css";
 import data from "./data/discovery_page.json";
 
-import Carousel from "./components/Carousel";
+import Section from "./components/Section";
 
 const App: React.FC = () => {
   return (
     <div className="App">
       {data.sections.map((section) => (
-        <div key={section.title}>
-          <h1>{section.title}</h1>
-          <Carousel section={section} />
-        </div>
+        <Section key={section.title} section={section} />
       ))}
     </div>
   );

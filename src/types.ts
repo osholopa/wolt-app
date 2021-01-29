@@ -1,4 +1,4 @@
-export interface Restaurant {
+export interface RestaurantData {
   blurhash: string;
   launch_date: string;
   location: Array<number>;
@@ -7,7 +7,7 @@ export interface Restaurant {
   popularity: number;
 }
 
-export interface Section {
+export interface SectionData {
   title: string;
-  restaurants: Array<Restaurant>;
+  restaurants: Array<RestaurantData>;
 }

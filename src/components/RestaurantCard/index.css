@@ -3,11 +3,13 @@
     margin: 0.2rem;
   }
 }
+
 @media only screen and (min-width: 760px) {
   .container {
     margin: 1rem;
   }
 }
+
 .container {
   overflow-x: hidden;
   display: flex;
@@ -18,11 +20,13 @@
     0px 3px 7px 0px rgb(116 116 116 / 14%),
     0px 1px 6px 0px rgb(122 121 121 / 12%);
 }
+
 .restaurant-img {
   width: 100%;
   border-top-right-radius: inherit;
   border-top-left-radius: inherit;
 }
+
 .restaurant-name {
   text-align: center;
   width: 90%;
@@ -30,9 +34,11 @@
   overflow: hidden;
   text-overflow: ellipsis;
 }
+
 .online-text {
   margin: 5px 5px;
 }
+
 .online-icon {
   display: inline;
 }

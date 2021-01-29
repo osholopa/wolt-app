@@ -1,18 +1,18 @@
 import React from "react";
 import Slider from "infinite-react-carousel";
 
-import { Section, Restaurant } from "../types";
-import RestaurantDetails from "./RestaurantDetails";
+import { SectionData, RestaurantData } from "../types";
+import RestaurantCard from "./RestaurantCard";
 
 interface SectionProps {
-  section: Section;
+  section: SectionData;
 }
 
 const Carousel: React.FC<SectionProps> = (props: SectionProps) => {
   return (
     <Slider slidesToShow={2}>
-      {props.section.restaurants.map((restaurant: Restaurant) => (
-        <RestaurantDetails key={restaurant.blurhash} restaurant={restaurant} />
+      {props.section.restaurants.map((restaurant: RestaurantData) => (
+        <RestaurantCard key={restaurant.blurhash} restaurant={restaurant} />
       ))}
     </Slider>
   );
