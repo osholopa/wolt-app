@@ -10,7 +10,7 @@ interface SectionProps {
 
 const Carousel: React.FC<SectionProps> = (props: SectionProps) => {
   return (
-    <Slider slidesToShow={3}>
+    <Slider slidesToShow={2}>
       {props.section.restaurants.map((restaurant: Restaurant) => (
         <RestaurantDetails key={restaurant.blurhash} restaurant={restaurant} />
       ))}

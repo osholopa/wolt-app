@@ -1,9 +1,16 @@
-.App {
-  min-height: 100vh;
-  background-color: #fafafa;
+html {
+  background-color: #fcfcfc;
+  font-family: "Montserrat", sans-serif;
+  color: #353535;
 }
 
-.App-header {
-  font-size: calc(10px + 2vmin);
-  color: rgb(43, 43, 43);
+@media only screen and (min-width: 1600px) {
+  .App {
+    max-width: 50vw;
+    margin: auto;
+  }
+}
+
+.App {
+  min-height: 100vh;
 }
